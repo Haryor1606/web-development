@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.chara {
+  display: grid;
+  place-items: center;
+  margin: 20%;
+  line-height: 2rem;
+
+}
