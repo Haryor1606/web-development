@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYSchool</title>
+</head>
+<style>
+  /*html{
+    height: 1000px
+  }*/
+  body{
+    /*background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v944-bb-004_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=13f41038a057e4e11b594200c584238b);*/
+    background-color: rgb(176, 176, 221);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .left{
+    width: 20%;
+    padding-right: 15px;
+    margin-right: 15px;
+    float: left;
+    background-color: antiquewhite;
+  }
+  
+  .div{
+    width: 20%;
+    padding-right: 15px;
+    margin-right: 15px;
+    float: right;
+    text-align: center;
+    /*background-color: antiquewhite;*/
+  }
+  .header,a {
+    background-color: rgb(160, 152, 152);
+    color: whitesmoke;
+    text-align: left;
+    font-size: xx-large;
+  }
+
+  .all{
+    margin: 0;
+    padding: 5px;
+  }
+  .all > h1, .browser, #mydiv {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  footer{
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(160, 152, 152);
+  }
+
+  .Add_reg{
+    display: none;
+  }
+  /* #mydiv {
+    width: 300px;
+    height: 200px;
+    background: red;
+    margin-left: 15px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    /*animation: mymove 5s infinite;
+  }  */
+
+/* Chrome, Safari, Opera */
+ /* @-webkit-keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
+
+/* Standard syntax */
+  /*@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }*/
+</style>
+<body>
+  <section>
+    <div>
+      <h1><img height="30px" src="C:\Users\Alaka.Alaka-PC\Desktop\moor siwes html\project\logosc.jpg" alt="display well"> FCAH&PT IBADAN</h1>
+    </div>
+    
+  </section>
+   <section class="header">
+    
+     <nav>
+      <a href="http://">Home</a>|
+      <a href="http://">Register</a>|
+      <a href="http://">About</a>  
+     </nav>        
+    </section>
+  
+  <section class="left">
+    <aside id="leftside">
+      <h2>LISTED COURSES</h2>
+      <ul>
+        <li>Animal Health</li>
+        <li>Animal health & Pdt.</li>
+        <li>Agic. Business</li>
+        <li>Computer Science</li>
+        <li>fisheries</li>
+        <li>Science laboratory Tech.</li>
+        <li>Statistics</li>
+      </ul>
+      <div class="myDiv">
+        <button onclick="myReg()">REGISTER</button>
+      </div>
+      <div class="Add_reg">
+        <form action="">       
+          <p><input type="text" id="surname" name="" placeholder="Surname"></p>
+          <p><input type="text" id="other_name" name="" placeholder="Othername"></p>
+          <p><input type="email" name="" id="email" placeholder="Email" required></p>
+          <p>State of origin:
+            <input type="text">
+          </p>
+          <p>Nationality:
+            <input type="text">
+          </p>
+          <p>
+            <div> Sex: <label for="male">M
+              <input type="radio" name="gender" id="male">
+            </label>
+            <label for="girl">F
+              <input type="radio" name="gender" id="girl">
+            </label>
+          </div>
+          </p>
+          <p>Date Of Birth:
+            <label for="birth">
+              <input type="date" name="" id="birth">
+            </label>          
+          </p>
+          <p>upload your ssce result in pdf format:
+            <input type="file" name="" id="result" >
+          </p>
+          <p>
+            <input type="checkbox" name="" id="agreement">
+            I Agree With All Terms And Condition
+          </p>
+          <p>
+            <button type="submit" id="register">Register</button>
+          </p>
+        </form>
+      </div>  
+        
+        
+
+    </aside>
+    
+  </section>
+ 
+  <section class="all">
+    <article class="browser">
+       <h1>FEDERAL COLLEGE OF ANIMAL HEALTH & PRODUCTION TECHNOLOGY</h1>
+    </article>
+    <article>
+
+    </article class="browser">
+    <h1>About Us</h1>
+    <article>
+
+      <article class="browser">
+       <p>The School of Animal Health and Husbandry (as it was then referred to) was founded on the 1st of April, 1964 (by the defunct Western Region and USAID) to meet the need to train Livestock Assistants (certificate) in order to cope with the ever increasing demand for assistance in the practise of veterinary profession. The School became an integral part of the Institute of Agricultural Research and Training (I.A.R. &T) of the ObafemiAwolowo University, Ile-Ife by the Western State Edict of 1970.</p> 
+       <p>The Mission of the College is to contribute to the development of Nigeria through training of qualitative manpower by adequate exposure to sound theoretical background, practical, farm and field demonstration as well as knowledge capacity development for staff.</p> 
+      </article>
+        <div id="mydiv"></div>
+      </article>
+  </section>
+
+    <aside class="div">
+      <p>
+        <h1>WELCOME!!!</h1>
+      </p>
+      <h1>FCAH&PT</h1>
+      <h5>Education Is The Best Legacy</h5>
+      <P>
+        <img height="400px" width="300px" src="logosc.jpg" alt="">
+      </P>
+    </aside>
+
+
+  
+ 
+ <script>
+    var add_reg = document.querySelector(".Add_reg");
+    var sur = document.getElementById("surname");
+    var other_name = document.getElementById("other_name");
+    var mail = document.getElementById("email");
+    var btn = document.getElementById("register");
+
+    btn.addEventListener("click", checkRegister);
+
+    function checkRegister(){
+      var Surname = sur.value;
+      var other = other_name.value;
+      var email = mail.value;
+      
+      alert("welcome dear");
+    }
+    sessionStorage.setItem("user_info", JSON.stringify({surname:sur.value,name:other_name.value,Email:mail.value}));
+    //location.replace("index.html");
+    //window.localStorage.setItem("about", surname.value);
+    //var sur = window.localStorage.getItem("about");
+   // console.log(sur);
+
+   function  myReg() {
+     add_reg.style.display ="block";
+   }
+ </script> 
+  
+</body>
+
+
+ <!-- <footer>
+    <p>&copy: Moor Tech community</p> 
+    <a href="">MoorTech</a>
+  </footer> -->
+</html>

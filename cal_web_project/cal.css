@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+body {
+  background-color:whitesmoke;
+}
+
+
+.container {
+
+  line-height: 2.0em;
+  margin: 15%;
+  display: grid;
+  place-items: center;
+}
+
+.head {
+  color:blue;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.word {
+  color:blue;
+}
+
+button {
+  width: 6vw;
+  border-radius: 5px;
+  padding: 4%;
+  color:blue;
+  background-color: aquamarine;
+}
+
+#num1 {
+  color:blue;
+  background-color: aquamarine;
+}
+
+#num2 {
+  color:blue;
+  background-color: aquamarine;
+}
+
+#reset {
+  color:blue;
+  background-color: aquamarine;
+}
