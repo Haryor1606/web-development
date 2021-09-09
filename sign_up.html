@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">My Website Sign Up</div>
+        <input type="text" name=""id="fullname" placeholder="fullname">
+        <input type="username" name=""id="username" name="username">
+        <input type="password" name=""id="password" placeholder="password">
+        <input type="pass" name=""id="password" placeholder="confirm_password">
+        <input type="e_mail" name=""id="password" placeholder="e_mail">
+        <input type="phone_number" name=""id="password" placeholder="phone_number">
+        <input type="age" name=""id="password" placeholder="age">
+        <input type="gender" name=""id="password" placeholder="gender">
+        <button type="button" id="login">login</button>
+   </div>
+</body>
+<script>
+    let user = document.getElementById("fullname");
+    let pass = document.getElementById("username");
+    let man = document.getElementById("password");
+    let me = document.getElementById("confirm_password");
+    let woman = document.getElementById("e_mail");
+    let num = document.getElementById("phone_number");
+    let tit = document.getElementById("age");
+    let gen = document.getElementById("gender");
+    let btn = document.getElementById("login");
+
+    let correct_fullname = "";
+    let correct_username = "";
+    let correct_password = "";
+    let correct_password = "";
+    let correct_e_mail = "";
+    let correct_phone_number = "";
+    let correct_age = "";
+    let correct_gender = "";
+
+    btn.addEventListener("click", checkInput);
+
+    function checkInput() {
+        let fullname = user.value;
+        let username = pass.value;
+        let password = man.value;
+        let confirm_password= me.value;
+        let e_mail = woman.value;
+        let phone_number = num.value;
+        let age = tit.value;
+        let gender = gen.value;
+        if(password == correct_password && confirm_password == password ){
+            alert("Sign Up Successfull");
+        }else{
+            alert("password not match");
+        }
+        
+    }
+</script>
+</html>
