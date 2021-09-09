@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Screen</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">My login Screen</div>
+        <input type="text" name=""id="username" name="username">
+        <input type="password" name=""id="password" placeholder="password">
+        <button type="button" id="login">login</button>
+   </div>
+</body>
+<script>
+    let user = document.getElementById("username");
+    let pass = document.getElementById("password");
+    let btn = document.getElementById("login");
+
+
+    let correct_username = "username";
+    let correct_password = "password";
+
+    btn.addEventListener("click", checkInput);
+
+    function checkInput() {
+        let username = user.value;
+        let password = pass.value;
+        
+        if(username == correct_username && password == correct_password){
+            alert("login Successfull");
+        }else{
+            alert("Wrong Input");
+        }
+        
+    }
+</script>
+</html>
